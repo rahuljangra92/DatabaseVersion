@@ -1,7 +1,8 @@
 CREATE TABLE [dbo].[DemoUsers]
 (
 [Id] [int] NOT NULL IDENTITY(1, 1),
-[UserId] [int] NULL
+[UserId] [int] NULL,
+[UserName] [varchar] (50) COLLATE Latin1_General_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[DemoUsers] ADD CONSTRAINT [PK__DemoUser__3214EC079E63A513] PRIMARY KEY CLUSTERED ([Id]) ON [PRIMARY]
